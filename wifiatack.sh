@@ -102,6 +102,8 @@ sleep 1s
 echo -e "\e[1;31m  [*]\e[0m \e[1;33mwlan1\e[0m"
 sleep 1s 
 echo -e "\e[1;31m  [*]\e[0m \e[1;33mwlan2\e[0m"
+xterm -hold -e "iwconfig" &
+airodump_xterm_PID=$!
 echo
 sleep 1s
 echo -n -e "\e[1;31m  Seleccione su targeta de red :\e[0m"
